@@ -1,0 +1,33 @@
+
+<body>
+
+<div class="content">
+    <!-- 导航栏 -->
+    <div class="content-nav">
+
+        <div class="title">
+            <div class="title-logo">
+                <p>
+                    <ruby>{$config.site_name}</ruby>
+                </p>
+            </div>
+            <div class="title-ul">
+                <ul>
+                    <li><a href="./">网站首页</a></li>
+                    {volist name="$category" id="v" empty="暂时没有数据" length='6'}
+                    {if condition="$v.type=='cover'"}
+                    <li><a href="./pc_cover.html?cid={$v.category_id}">{$v.category_name}</a></li>
+                    {/if}
+                    {if condition="$v.type=='pic_list'"}
+                    <li><a href="./pc_pic_list.html?page=1&limt=4&cid={$v.category_id}">{$v.category_name}</a></li>
+                    {/if}
+                    {if condition="$v.type=='article_list'"}
+                    <li><a href="./pc_article_list.html?page=1&limt=10&cid={$v.category_id}">{$v.category_name}</a></li>
+                    {/if}
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播 -->
+    <div class="cover"></div>

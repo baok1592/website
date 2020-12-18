@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {notempty name="$config.site_name"}
+    <title>{$config.site_name}</title>
+    {else /}
+    <title>初夏地产</title>
+    {/notempty}
+    <meta name="keywords" content="{$config.seo_desc}" />
+    <meta name="description" content="{$config.seo_desc}" />
+    <link  href="./static/pc/style/st-style.css" rel="stylesheet">
+    <link  href="./static/pc/css/index.css" rel="stylesheet">
+    <link  href="./static/pc/css/new.css" rel="stylesheet">
+    <link  href="./static/layui/css/layui.css" rel="stylesheet">
+    <script src="./static/pc/js/select.js"></script>
+</head>
+{include file='pc/header'/}
+    <!-- 当前位置选项卡 -->
+    <div class="select">
+
+       <div class="tab">
+           <div class="address">
+               您现在的位置：<a style="color: black" href="./pc_index.html">网站首页</a>  &nbsp;<span>>></span>  &nbsp;  {$list['right']['info']['category_name']}
+           </div>
+           <div class="tabitem">
+               <ul>
+                   {volist name="$list['left']['column']" id="v" length='6'}
+                       <li name="tab"><a style="color: black" href="{if $v['type']=='cover'}pc_cover?cid={$v['category_id']}{elseif $v['type']=='article_list'/}pc_article_list?page=1&limt=4&cid={$v['category_id']}
+                        {else /}pc_pic_list?cid={$v['category_id']}{/if}">{$v['short_name']}</a></li>
+                   {/volist}
+               </ul>
+           </div>
+        </div>
+        <section>
+            <div class="show"  name="divcontent">
+               <ul class="ulitem">
+                   {volist name="$list['right']['list']" empty="暂时没有数据"  id="v" length='6'}
+                   <a style="color: black" href="pc_article?id={$v.id}">
+                <li>
+                    <div class="blue">
+                        <span>{$v['reading_volume']}</span>
+                        <span class="bluetext">{$v['create_time']}</span>
+                    </div>
+                    <div class="litext">
+                        <div class="text">
+                           <span class="text1">{$v['short_title']}</span>
+                            <span class="text2">{$v['title']}</span>
+                        </div>
+                        
+                    </div>
+                </li></a>
+                   {/volist}
+               </ul>
+                <script src="./static/layui/layui.js" charset="utf-8"></script>
+                <div id="page" style="margin-top: 50px"></div>
+                <script>
+                    layui.use(['laypage', 'layer'], function() {
+                        var laypage = layui.laypage
+                            , layer = layui.layer;
+                        //调用分页
+                        laypage.render({
+                            elem: 'page'
+                            ,count: {$list['right']['count']}
+                            ,limit:1
+                            ,curr:{$list['right']['page']}
+                            ,jump: function(obj,first){
+                                if(!first)
+                                location.href="pc_article_list?cid={$list['right']['info']['category_id']}&page="+obj.curr+"&limt="+obj.limit;
+
+                            }
+                        });
+                    });
+                </script>
+            </div>
+
+        </section>
+    </div>
+    <!-- 尾部 -->
+    {include file='pc/footer'/}
+</div> 
+</body>
+</html>

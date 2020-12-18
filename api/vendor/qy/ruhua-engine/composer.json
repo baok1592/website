@@ -1,0 +1,19 @@
+{
+    "name": "qy/ruhua-engine",
+    "description": "ruhua-engine",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xxf",
+            "email": "2421912566@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ruhua\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "baok/website",
+    "description": "baok_website",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "baok1592",
+            "email": "1514945707@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        },
+        "psr-0": {
+            "": "extend/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "secure-http": false
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-orm": "^2.0",
+        "qy/ruhua-engine":"v1.05",
+        "topthink/think-image": "dev-master",
+        "topthink/think-view": "dev-master",
+        "aliyuncs/oss-sdk-php": "dev-master",
+        "tp5er/tp5-databackup": "dev-master"
+
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2",
+        "topthink/think-trace":"^1.0"
+    }
+}

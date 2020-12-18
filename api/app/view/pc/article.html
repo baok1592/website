@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {notempty name="$config.site_name"}
+    <title>{$config.site_name}</title>
+    {else /}
+    <title>初夏地产</title>
+    {/notempty}
+    <meta name="keywords" content="{$config.seo_desc}" />
+    <meta name="description" content="{$config.seo_desc}" />
+    <link  href="./static/pc/style/st-style.css" rel="stylesheet">
+    <link  href="./static/pc/css/index.css" rel="stylesheet">
+    <link  href="./static/pc/css/new.css" rel="stylesheet">
+    <script src="./static/pc/js/select.js"></script>
+</head>
+{include file='pc/header'/}
+    <!-- 当前位置选项卡 -->
+    <div class="content">
+         <div class="article">
+            <div class="tab">
+                <div class="addrs">
+                    <div class="address">
+                        您现在的位置：<a style="color: black" href="./pc_index.html">网站首页</a>  &nbsp;<span>>></span>  &nbsp;  {$rlist['pcolumn']['category_name']}
+                    </div>
+                </div>
+             </div>
+             <div class="title-first" style="font-size: 30px;margin-top: 60px;">
+                 <span>{$article.title}</span>
+             </div>
+             <div class="title-second">
+                 <ul>
+                    <li>来源：{$article.source}</li>
+                    <li>作者：{$article.author}</li>
+                    <li>{$article.create_time}</li>
+                 </ul>
+             </div>
+             <div class="article-content" ><div style="width: 1210px;text-align: left;margin: 0 auto;">{$article.content|raw}</div></div>
+             {notempty name="$rlist['article']['previous']"}
+             <span style="margin-left: 10px">上一篇：<a style="color: blue" href="pc_article?id={$rlist['article']['previous']['id']}">{$rlist['article']['previous']['title']}</a></span>
+             {else /}
+             <span style="margin-left: 10px">这是第一篇</span>
+             {/notempty}
+             {notempty name="$rlist['article']['next']"}
+             <span style="margin-left: 260px">下一篇：<a style="color: blue" href="pc_article?id={$rlist['article']['next']['id']}">{$rlist['article']['next']['title']}</a></span>
+             {else /}
+             <span style="margin-left: 260px">这是最后一篇</span>
+             {/notempty}
+         </div>
+    </div>
+   <div style="margin-bottom: 80px;"></div>
+    <!-- 尾部 -->
+    {include file='pc/footer'/}
+</div> 
+</body>
+</html>

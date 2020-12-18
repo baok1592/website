@@ -1,0 +1,224 @@
+{
+	"/phone/bottomNavigation/get_bottom_navigation_all": {
+	    "status": 200,
+	    "msg": "操作成功",
+	    "data": [
+	        {
+	            "id": 8,
+	            "uniacid": 0,
+	            "navigation_name": "模板中心",
+	            "bottom_sort": "1",
+	            "category_id": 29,
+	            "type": "pic_list",
+	            "is_show": 1
+	        },
+	        {
+	            "id": 6,
+	            "uniacid": 0,
+	            "navigation_name": "其他产品",
+	            "bottom_sort": "2",
+	            "category_id": 27,
+	            "type": "article_list",
+	            "is_show": 0
+	        },
+	        {
+	            "id": 7,
+	            "uniacid": 2,
+	            "navigation_name": "产品介绍",
+	            "bottom_sort": "3",
+	            "category_id": 24,
+	            "type": "cover",
+	            "is_show": 1
+	        },
+	        {
+	            "id": 9,
+	            "uniacid": 2,
+	            "navigation_name": "联系我们",
+	            "bottom_sort": "4",
+	            "category_id": -1,
+	            "type": "us",
+	            "is_show": 1
+	        }
+	    ]
+	},
+	"phone/index/get_record": {
+	    "status": 200,
+	    "msg": "操作成功",
+	    "data": [
+	        {
+	            "id": 10,
+	            "key": "index_tmp",
+	            "value": "如花商城",
+	            "desc": "首页企业简介",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 0
+	        },
+	        {
+	            "id": 11,
+	            "key": "site_name",
+	            "value": "如花商城",
+	            "desc": "站点名称",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 1567744893
+	        },
+	        {
+	            "id": 12,
+	            "key": "tel",
+	            "value": "0859-3333333",
+	            "desc": "联系电话",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 1567744893
+	        },
+	        {
+	            "id": 13,
+	            "key": "home_cpy",
+	            "value": "如花商城",
+	            "desc": "公司名称",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 1567744893
+	        },
+	        {
+	            "id": 14,
+	            "key": "seo_title",
+	            "value": "如花商城开源系统_新零售社交商城系统,Thinkphp+VUE+Uniapp开发商城",
+	            "desc": "首页标题",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 1567744893
+	        },
+	        {
+	            "id": 15,
+	            "key": "cpy_address",
+	            "value": "铭都公寓",
+	            "desc": "公司地址",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 1567744893
+	        },
+	        {
+	            "id": 16,
+	            "key": "seo_desc",
+	            "value": "如花商城开源系统,采用TP6+VUE+Uniapp开发,简单易用的特点深受大家喜爱。欢迎thinkphp、vue、uniapp的爱好者交流学习商城系统",
+	            "desc": "首页描述",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 1567744893
+	        },
+	        {
+	            "id": 29,
+	            "key": "longitude",
+	            "value": "104.921027",
+	            "desc": "企业经度",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 0
+	        },
+	        {
+	            "id": 30,
+	            "key": "latitude",
+	            "value": "25.104948",
+	            "desc": "企业纬度",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 0
+	        },
+	        {
+	            "id": 31,
+	            "key": "beian",
+	            "value": "黔ICP备 123456号-1",
+	            "desc": "企业备案号",
+	            "type": 3,
+	            "is_use": 1,
+	            "update_time": 0
+	        }
+	    ]
+	},
+	"phone/index/get_nav": {
+	    "status": 200,
+	    "msg": "操作成功",
+	    "data": [
+	        {
+	            "category_id": 24,
+	            "category_name": "介绍",
+	            "type": "cover",
+	            "category_pic": "/uploads/imgs/202011/5fb380e7bd86b.jpeg",
+	            "template": "",
+	            "short_name": "介绍"
+	        },
+	        {
+	            "category_id": 25,
+	            "category_name": "价格",
+	            "type": "price_100",
+	            "category_pic": "/uploads/imgs/202011/5fb3813e407a2.jpeg",
+	            "template": "",
+	            "short_name": "价格"
+	        },
+	        {
+	            "category_id": 29,
+	            "category_name": "模板中心",
+	            "type": "pic_list",
+	            "category_pic": "/uploads/imgs/202011/5fae5ecba9eea.png",
+	            "template": "",
+	            "short_name": "模板中心"
+	        },
+	        {
+	            "category_id": 26,
+	            "category_name": "更新记录",
+	            "type": "cover",
+	            "category_pic": "/uploads/imgs/202011/5fb380eee87e2.jpeg",
+	            "template": "",
+	            "short_name": "更新记录"
+	        },
+	        {
+	            "category_id": 27,
+	            "category_name": "其他产品",
+	            "type": "article_list",
+	            "category_pic": "/uploads/imgs/202011/5fb381771d602.jpeg",
+	            "template": "",
+	            "short_name": "更多产品"
+	        },
+	        {
+	            "category_id": 28,
+	            "category_name": "手册",
+	            "type": "address",
+	            "category_pic": "/uploads/imgs/202011/5fb3813e9d154.jpeg",
+	            "template": "",
+	            "short_name": "手册"
+	        }
+	    ]
+	},
+	"phone/index/get_banneritem": {
+	    "status": 200,
+	    "msg": "操作成功",
+	    "data": [
+	        {
+	            "id": 3,
+	            "uniacid": 0,
+	            "key_word": "轻站开源系统",
+	            "img_id": "/uploads/imgs/202011/5fb39d1006d4c.jpeg",
+	            "category_id": 0,
+	            "type": "article",
+	            "jump_id": 16,
+	            "sort": 1,
+	            "banner_id": 1
+	        },
+	        {
+	            "id": 4,
+	            "uniacid": 0,
+	            "key_word": "黔域科技",
+	            "img_id": "/uploads/imgs/202011/5fae5ecba9eea.png",
+	            "category_id": 0,
+	            "type": "article",
+	            "jump_id": 23,
+	            "sort": 4,
+	            "banner_id": 1
+	        }
+	    ]
+	}
+	
+}
+

@@ -1,0 +1,62 @@
+<div class="bottom">
+    <div class="bottom-div">
+        <!-- 左 -->
+        <div class="bottom-logo">
+            <div class="bottom-logo-text">
+                        <span>
+                            {notempty name="$config.site_name"}
+                                {$config.site_name}
+                            {else /}
+                                初夏地址
+                            {/notempty}
+                        </span>
+            </div>
+        </div>
+        <!-- 中 -->
+        <div class="bottom-content">
+            <div class="bottom-content-title">
+                <ul>
+                    <li><a href="./">网站首页</a></li>
+                    {volist name="$category" id="v" empty="暂时没有数据" length='6'}
+                    {if condition="$v.type=='cover'"}
+                    <li><a href="./pc_cover.html?cid={$v.category_id}">{$v.category_name}</a></li>
+                    {/if}
+                    {if condition="$v.type=='pic_list'"}
+                    <li><a href="./pc_pic_list.html?page=1&limt=4&cid={$v.category_id}">{$v.category_name}</a></li>
+                    {/if}
+                    {if condition="$v.type=='article_list'"}
+                    <li><a href="./pc_article_list.html?page=1&limt=10&cid={$v.category_id}">{$v.category_name}</a></li>
+                    {/if}
+                    {/volist}
+                </ul>
+            </div>
+            <br>
+            <div class="bottom-content-phone">
+                <span>电话：0000-0000-0000</span>
+            </div>
+            <div class="bottom-content-email">
+                <span>邮箱：{$config.email}</span>
+            </div>
+            <div class="bottom-content-address">
+                <span>地址：{$config.cpy_address}</span>
+            </div>
+            <div class="img">
+                <div class="wechat1"><span>官方微信</span></div>
+                <div class="wechat2"><span>官方微信</span></div>
+            </div>
+            <br>
+            <div class="bottom-content-bottom">
+                技术支持：黔域科技 copyrigh2020-2040 All Rights Reserved {$config.home_cpy}
+                {$config.beian} 版权声明
+            </div>
+        </div>
+
+        <div class="bottom-us">
+            <ul>
+                <li>全国服务热线</li>
+                <li>{$config.tel}</li>
+                <li><a>在线咨询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
