@@ -5,13 +5,13 @@
  Source Server Type    : MariaDB
  Source Server Version : 100414
  Source Host           : localhost:3306
- Source Schema         : qing1
+ Source Schema         : qzgit123
 
  Target Server Type    : MariaDB
  Target Server Version : 100414
  File Encoding         : 65001
 
- Date: 17/12/2020 15:26:08
+ Date: 30/12/2020 16:27:52
 */
 
 SET NAMES utf8mb4;
@@ -64,7 +64,7 @@ CREATE TABLE `news_article`  (
   `is_headlines` int(11) NULL DEFAULT 0 COMMENT '是否头条0否1是',
   `delete_time` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 AVG_ROW_LENGTH = 6553 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = 'CMS文章表' ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 AVG_ROW_LENGTH = 6553 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = 'CMS文章表' ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of news_article
@@ -80,6 +80,7 @@ INSERT INTO `news_article` VALUES (8, 0, '着力构建高水平社会主义市�
 INSERT INTO `news_article` VALUES (9, 0, '空中运输服务', '￥ 6200/次', '空运[air transport;airfreight;airlift;air transportation] 也叫空中运输', '<p>陆路运输服务、是指通过陆路(地上或者地下) 运送货物或者旅客的运输业务活动，包括铁路运输和其他陆路运输(公路运输缆车运输、索道运输、地铁运输、城市轻轨运输等)。<span class=\"sup--normal\" data-sup=\"1\" data-ctrmap=\":1,\" style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; margin-left: 2px; color: rgb(51, 102, 204); cursor: pointer; padding: 0px 2px;\">&nbsp;[1]</span><a style=\"color: rgb(19, 110, 194); position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_22915097\"></a>&nbsp;</p><p>出租车公司向使用本公司自有出租车的出租车司机收取的管理费用，按陆路运输服务征收增值税。</p><p>陆路运输服务、是指通过陆路(地上或者地下) 运送货物或者旅客的运输业务活动，包括铁路运输和其他陆路运输(公路运输缆车运输、索道运输、地铁运输、城市轻轨运输等)。<span class=\"sup--normal\" data-sup=\"1\" data-ctrmap=\":1,\" style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; margin-left: 2px; color: rgb(51, 102, 204); cursor: pointer; padding: 0px 2px;\">&nbsp;[1]</span><a style=\"color: rgb(19, 110, 194); position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_22915097\"></a>&nbsp;</p><p>出租车公司向使用本公司自有出租车的出租车司机收取的管理费用，按陆路运输服务征收增值税。</p><p>陆路运输服务、是指通过陆路(地上或者地下) 运送货物或者旅客的运输业务活动，包括铁路运输和其他陆路运输(公路运输缆车运输、索道运输、地铁运输、城市轻轨运输等)。<span class=\"sup--normal\" data-sup=\"1\" data-ctrmap=\":1,\" style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; margin-left: 2px; color: rgb(51, 102, 204); cursor: pointer; padding: 0px 2px;\">&nbsp;[1]</span><a style=\"color: rgb(19, 110, 194); position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_22915097\"></a>&nbsp;</p><p>出租车公司向使用本公司自有出租车的出租车司机收取的管理费用，按陆路运输服务征收增值税。</p><p><br/></p>', '/uploads/imgs/202011/5fc4a9441e92f.jpeg', 0, 'admin', 3, '', 0, 1606726970, 0, '', 0, '', 0, 1, 0, NULL);
 INSERT INTO `news_article` VALUES (10, 0, '铁路运输服务', '￥ 2200/次', '铁路运输是使用铁路列车运送旅客和货物的一种运输方式。它在社会物质生产过程中起着重要作用。', '<p>陆路运输服务、是指通过陆路(地上或者地下) 运送货物或者旅客的运输业务活动，包括铁路运输和其他陆路运输(公路运输缆车运输、索道运输、地铁运输、城市轻轨运输等)。<span class=\"sup--normal\" data-sup=\"1\" data-ctrmap=\":1,\" style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; margin-left: 2px; color: rgb(51, 102, 204); cursor: pointer; padding: 0px 2px;\">&nbsp;[1]</span><a style=\"color: rgb(19, 110, 194); position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_22915097\"></a>&nbsp;</p><p>出租车公司向使用本公司自有出租车的出租车司机收取的管理费用，按陆路运输服务征收增值税。</p><p>陆路运输服务、是指通过陆路(地上或者地下) 运送货物或者旅客的运输业务活动，包括铁路运输和其他陆路运输(公路运输缆车运输、索道运输、地铁运输、城市轻轨运输等)。<span class=\"sup--normal\" data-sup=\"1\" data-ctrmap=\":1,\" style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; margin-left: 2px; color: rgb(51, 102, 204); cursor: pointer; padding: 0px 2px;\">&nbsp;[1]</span><a style=\"color: rgb(19, 110, 194); position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_22915097\"></a>&nbsp;</p><p>出租车公司向使用本公司自有出租车的出租车司机收取的管理费用，按陆路运输服务征收增值税。</p><p>陆路运输服务、是指通过陆路(地上或者地下) 运送货物或者旅客的运输业务活动，包括铁路运输和其他陆路运输(公路运输缆车运输、索道运输、地铁运输、城市轻轨运输等)。<span class=\"sup--normal\" data-sup=\"1\" data-ctrmap=\":1,\" style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; margin-left: 2px; color: rgb(51, 102, 204); cursor: pointer; padding: 0px 2px;\">&nbsp;[1]</span><a style=\"color: rgb(19, 110, 194); position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_22915097\"></a>&nbsp;</p><p>出租车公司向使用本公司自有出租车的出租车司机收取的管理费用，按陆路运输服务征收增值税。</p><p><br/></p>', '/uploads/imgs/202011/5fc4b45fb987e.jpeg', 0, 'admin', 3, '', 0, 1606726970, 0, '', 0, '', 0, 1, 0, NULL);
 INSERT INTO `news_article` VALUES (11, 0, '1', '1', '1', '<p>1111</p>', '/uploads/imgs/202011/5fc4aa6902774.png', 0, 'admin', 3, '1', NULL, 1608188249, NULL, NULL, NULL, NULL, 0, 0, 0, 1608188259);
+INSERT INTO `news_article` VALUES (12, 0, 'ccc', 'cc', '333', '<p>cccc</p>', '/uploads/imgs/202011/5fc4a93bc127a.jpeg', 0, 'admin', 3, '222', NULL, 0, NULL, NULL, NULL, NULL, 0, 0, 0, 1609316846);
 
 -- ----------------------------
 -- Table structure for news_auth_group
@@ -208,13 +209,18 @@ INSERT INTO `news_auth_rule` VALUES (65, '/category/admin/get_one_category', '�
 DROP TABLE IF EXISTS `news_banner`;
 CREATE TABLE `news_banner`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uniacid` int(11) NOT NULL,
+  `uniacid` int(11) NOT NULL DEFAULT 0,
   `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'Banner名称，通常作为标识',
   `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'Banner描述',
   `delete_time` int(11) NULL DEFAULT NULL,
   `update_time` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = 'banner管理表' ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = 'banner管理表' ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of news_banner
+-- ----------------------------
+INSERT INTO `news_banner` VALUES (1, 0, '1', '2', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for news_banner_item
@@ -222,18 +228,18 @@ CREATE TABLE `news_banner`  (
 DROP TABLE IF EXISTS `news_banner_item`;
 CREATE TABLE `news_banner_item`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uniacid` int(11) NOT NULL,
+  `uniacid` int(11) NOT NULL DEFAULT 0,
   `key_word` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `img_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '外键，关联image表',
-  `category_id` int(100) NOT NULL,
+  `category_id` int(100) NULL DEFAULT NULL,
   `type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '1' COMMENT '跳转类型',
   `jump_id` int(11) NOT NULL,
-  `sort` int(11) NOT NULL,
+  `sort` int(11) NOT NULL DEFAULT 0,
   `delete_time` int(11) NULL DEFAULT NULL,
   `banner_id` int(11) NOT NULL COMMENT '外键，关联banner表',
   `update_time` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = 'banner子项表' ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = 'banner子项表' ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for news_bottom_navigation
@@ -264,7 +270,7 @@ INSERT INTO `news_bottom_navigation` VALUES (9, 2, '联系我们', '4', -1, 'us'
 DROP TABLE IF EXISTS `news_category`;
 CREATE TABLE `news_category`  (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
-  `uniacid` int(11) NOT NULL,
+  `uniacid` int(11) NOT NULL DEFAULT 0,
   `category_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '栏目标题',
   `short_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '栏目描述',
   `type` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '类型list列表cover封面',
@@ -273,18 +279,18 @@ CREATE TABLE `news_category`  (
   `is_visible` int(11) NOT NULL DEFAULT 1 COMMENT '是否显示  1 显示 0 不显示',
   `sort` int(11) NULL DEFAULT NULL,
   `category_pic` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '商品分类图片',
-  `template` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '模板',
-  `seotitle` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'seo标题',
-  `keyword` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '关键字',
-  `is_jump` int(11) NOT NULL COMMENT '是否跳转',
-  `jumpaddress` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '跳转地址',
+  `template` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT '模板',
+  `seotitle` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT 'seo标题',
+  `keyword` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT '关键字',
+  `is_jump` int(11) NOT NULL DEFAULT 0 COMMENT '是否跳转',
+  `jumpaddress` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT '跳转地址',
   `json` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `content` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '封面内容',
-  `is_phone_index` int(11) NOT NULL COMMENT '是否手机端首页显示0否1是',
+  `content` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 0 COMMENT '封面内容',
+  `is_phone_index` int(11) NOT NULL DEFAULT 0 COMMENT '是否手机端首页显示0否1是',
   `is_pc_index` int(11) NOT NULL DEFAULT 0 COMMENT '是否pc首页显示0否1是',
   `delete_time` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`category_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 AVG_ROW_LENGTH = 244 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '商品分类表' ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 8 AVG_ROW_LENGTH = 244 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '商品分类表' ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of news_category
@@ -295,6 +301,7 @@ INSERT INTO `news_category` VALUES (3, 0, '快件运输', '快件运输', 'pic_l
 INSERT INTO `news_category` VALUES (4, 0, '新闻快讯', '新闻快讯', 'article_list', 0, 1, 1, 4, '/uploads/imgs/202012/5fc6262113c55.png', '', '', '', 0, '', '{\"cover\":{\"flag\":true,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]},\"article_list\":{\"flag\":true,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]},\"pic_list\":{\"flag\":true,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]}}', '', 1, 1, NULL);
 INSERT INTO `news_category` VALUES (5, 0, '搬家', '搬家', 'pic_list', 3, 2, 1, 0, '/uploads/imgs/202011/5fc4b44d3ebda.jpeg', '', '', '', 0, '', '{\"cover\":{\"flag\":false,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]},\"article_list\":{\"flag\":false,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]},\"pic_list\":{\"flag\":true,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]}}', '', 0, 0, NULL);
 INSERT INTO `news_category` VALUES (6, 0, '长途运输', '长途运输', 'pic_list', 3, 2, 1, 0, '/uploads/imgs/202011/5fc4a946e70d8.jpeg', '', '', '', 0, '', '{\"cover\":{\"flag\":false,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]},\"article_list\":{\"flag\":false,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]},\"pic_list\":{\"flag\":true,\"data\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]}}', '', 0, 0, NULL);
+INSERT INTO `news_category` VALUES (7, 0, 'ces ', 'ccc', 'article_list', 0, 1, 1, 0, '/uploads/imgs/202011/5fc4a93bc127a.jpeg', '', '', '', 0, '', '[]', '', 0, 0, 1609316850);
 
 -- ----------------------------
 -- Table structure for news_file
