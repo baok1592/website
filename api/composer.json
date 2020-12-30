@@ -26,7 +26,7 @@
         "php": ">=7.0.0",
         "topthink/framework": "^6.0.0",
         "topthink/think-orm": "^2.0",
-        "qy/ruhua-engine":"v1.05",
+        "ruhua/framework":"v1.3",
         "topthink/think-image": "dev-master",
         "topthink/think-view": "dev-master",
         "aliyuncs/oss-sdk-php": "dev-master",
