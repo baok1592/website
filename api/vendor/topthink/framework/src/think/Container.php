@@ -440,15 +440,15 @@ class Container implements ContainerInterface, ArrayAccess, IteratorAggregate, C
         foreach ($params as $param) {
             $name      = $param->getName();
             $lowerName = Str::snake($name);
-            $class     = $param->getClass();
+            $reflectionType = $param->getType();
 
-            if ($class) {
-                $args[] = $this->getObjectParam($class->getName(), $vars);
+            if ($reflectionType && $reflectionType->isBuiltin() === false) {
+                $args[] = $this->getObjectParam($reflectionType->getName(), $vars);
             } elseif (1 == $type && !empty($vars)) {
                 $args[] = array_shift($vars);
-            } elseif (0 == $type && isset($vars[$name])) {
+            } elseif (0 == $type && array_key_exists($name, $vars)) {
                 $args[] = $vars[$name];
-            } elseif (0 == $type && isset($vars[$lowerName])) {
+            } elseif (0 == $type && array_key_exists($lowerName, $vars)) {
                 $args[] = $vars[$lowerName];
             } elseif ($param->isDefaultValueAvailable()) {
                 $args[] = $param->getDefaultValue();

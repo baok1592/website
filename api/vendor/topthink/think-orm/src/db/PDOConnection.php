@@ -203,7 +203,7 @@ abstract class PDOConnection extends Connection
      * @param array $config 连接信息
      * @return string
      */
-    abstract protected function parseDsn(array $config);
+    abstract protected function parseDsn(array $config): string;
 
     /**
      * 取得数据表的字段信息
@@ -211,7 +211,7 @@ abstract class PDOConnection extends Connection
      * @param string $tableName 数据表名称
      * @return array
      */
-    abstract public function getFields(string $tableName);
+    abstract public function getFields(string $tableName): array;
 
     /**
      * 取得数据库的表信息
@@ -219,7 +219,7 @@ abstract class PDOConnection extends Connection
      * @param string $dbName 数据库名称
      * @return array
      */
-    abstract public function getTables(string $dbName);
+    abstract public function getTables(string $dbName = ''): array;
 
     /**
      * 对返数据表字段信息进行大小写转换出来
@@ -1191,7 +1191,7 @@ abstract class PDOConnection extends Connection
                 $key = null;
             }
 
-            if (strpos($column, ',')) {
+            if ('*' == $column || strpos($column, ',')) {
                 $column = null;
             } elseif (strpos($column, ' ')) {
                 $column = substr(strrchr(trim($column), ' '), 1);
@@ -1236,8 +1236,8 @@ abstract class PDOConnection extends Connection
 
             // 判断占位符
             $sql = is_numeric($key) ?
-            substr_replace($sql, $value, strpos($sql, '?'), 1) :
-            substr_replace($sql, $value, strpos($sql, ':' . $key), strlen(':' . $key));
+            substr_replace($sql, (string) $value, strpos($sql, '?'), 1) :
+            substr_replace($sql, (string) $value, strpos($sql, ':' . $key), strlen(':' . $key));
         }
 
         return rtrim($sql);
@@ -1409,8 +1409,9 @@ abstract class PDOConnection extends Connection
                 --$this->transTimes;
                 ++$this->reConnectTimes;
                 $this->close()->startTrans();
+            } else {
+                throw $e;
             }
-            throw $e;
         }
     }
 

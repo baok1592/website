@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita010d5006cb829f974ac5025d4361854
+class ComposerStaticInit62b93f51f36e4a3d986015378c6b38c3
 {
     public static $files = array (
         '9b552a3cc426e3287cc811caefa3cf53' => __DIR__ . '/..' . '/topthink/think-helper/src/helper.php',
@@ -50,6 +50,7 @@ class ComposerStaticInita010d5006cb829f974ac5025d4361854
         ),
         'L' => 
         array (
+            'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\Cached\\' => 24,
             'League\\Flysystem\\' => 17,
         ),
@@ -70,15 +71,15 @@ class ComposerStaticInita010d5006cb829f974ac5025d4361854
         ),
         'think\\' => 
         array (
-            0 => __DIR__ . '/..' . '/topthink/framework/src/think',
+            0 => __DIR__ . '/..' . '/topthink/think-image/src',
             1 => __DIR__ . '/..' . '/topthink/think-helper/src',
-            2 => __DIR__ . '/..' . '/topthink/think-image/src',
-            3 => __DIR__ . '/..' . '/topthink/think-orm/src',
-            4 => __DIR__ . '/..' . '/topthink/think-template/src',
+            2 => __DIR__ . '/..' . '/topthink/think-orm/src',
+            3 => __DIR__ . '/..' . '/topthink/think-template/src',
+            4 => __DIR__ . '/..' . '/topthink/framework/src/think',
         ),
         'ruhua\\' => 
         array (
-            0 => __DIR__ . '/..' . '/qy/ruhua-engine/src',
+            0 => __DIR__ . '/..' . '/ruhua/framework/src',
         ),
         'app\\' => 
         array (
@@ -120,6 +121,10 @@ class ComposerStaticInita010d5006cb829f974ac5025d4361854
         array (
             0 => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS',
         ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
+        ),
         'League\\Flysystem\\Cached\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src',
@@ -135,6 +140,7 @@ class ComposerStaticInita010d5006cb829f974ac5025d4361854
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
@@ -143,10 +149,10 @@ class ComposerStaticInita010d5006cb829f974ac5025d4361854
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita010d5006cb829f974ac5025d4361854::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita010d5006cb829f974ac5025d4361854::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr0 = ComposerStaticInita010d5006cb829f974ac5025d4361854::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInita010d5006cb829f974ac5025d4361854::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit62b93f51f36e4a3d986015378c6b38c3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit62b93f51f36e4a3d986015378c6b38c3::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit62b93f51f36e4a3d986015378c6b38c3::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit62b93f51f36e4a3d986015378c6b38c3::$classMap;
 
         }, null, ClassLoader::class);
     }
