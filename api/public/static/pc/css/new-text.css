@@ -1,0 +1,94 @@
+.content{
+    width: 100%;
+    height: 900px;
+    
+}
+.tab{
+    width: 100%;
+    height: 70px;
+    border-bottom: silver 1px solid;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.address{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}
+.address>span{
+    font-size: 10px;
+}
+.cover{
+    width: 100%;
+    height:360px ;
+    background-image: url(../imgs/banner.jpg);
+}
+.article{
+    height: 830px;
+    width: 1200px;
+    margin: 0 auto 0;
+}
+.title-first{
+    font-size: 25px;
+    width: 1200px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-second>ul{
+    width: 800px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0;
+}
+.title-second>ul>li{
+    width: 160px;
+    height: 100%;
+    text-align: left;
+    color:#303030;
+    display: flex;
+    justify-content: space-around;
+}
+.title-second>ul>li>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.title-second>ul>li>a:nth-child(1){
+    background-image: url(../imgs/weibo.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 5px 5px;
+}
+.title-second>ul>li>a:nth-child(2){
+    background-image: url(../imgs/微信.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 5px 5px;
+}
+.title-second>ul>li>a:nth-child(3){
+    background-image: url(../imgs/qq.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 5px 5px;
+}
+.title-second>ul>li>a:nth-child(4){
+    background-image: url(../imgs/空间.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 5px 5px;
+}
+.title-third{
+    width: 100%;
+    height: 30px;
+    background-color: 	#F0F0F0;
+    color:#909090;
+    text-align: left;
+}

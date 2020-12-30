@@ -1,0 +1,100 @@
+.cover{
+    width: 100%;
+    height:360px ;
+    background-image: url(../imgs/banner.jpg);
+}
+.message{
+    width: 1300px;
+    height: 620px;
+    margin: 0 auto 0;
+    color: #505050;
+}
+.address{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}
+.messageitem{
+    width: 100%;
+    height:520px;
+    display: flex;
+
+}
+.messagetext{
+    width: 40%;
+    height: 60%;
+    position: relative;
+
+ }
+
+.span1{
+    color: #0066CC;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.span2{
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+}
+.span3{
+    color: silver;
+    font-size: 15px;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+.span4{
+    color: silver;
+    font-size: 18px;
+    position: absolute;
+    top:300px;
+    left: 100px;
+}
+.messageform{
+    width: 60%;
+    height: 100%;
+    
+}
+.messageform>ul{
+    margin-top: 100px;
+    width: 600px;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.messageform>ul>li{
+    width: 300px;
+    height: 70px; 
+}
+.messageform>ul>li>input{
+    width:280px ;
+    height: 40px;
+    border:1px solid silver; 
+    outline:none;
+}
+.messageform>ul>li>button{
+    width: 190%;
+    height: 40px;
+    margin-left: 10px;
+    background-color: steelblue;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.messagetext>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

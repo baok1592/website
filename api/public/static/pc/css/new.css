@@ -1,0 +1,140 @@
+.cover{
+    width: 100%;
+    height:360px ;
+    background-image: url(../imgs/banner.jpg);
+}
+.select{
+    width: 1200px;
+    margin:0px auto 0;
+    height: 800px;
+    color: #505050;
+    background-image: url(../imgs/aboutbg.png);
+    background-repeat: no-repeat;
+    background-position: 45% 90%;
+}
+.tab{
+    width: 100%;
+    height: 70px;
+    border-bottom: silver 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addrs{
+    width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+}
+.address{ 
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}
+.address>span{
+    font-size: 10px;
+}
+.tabitem{
+    width: 50%;
+    height: 100%;
+}
+.tab>.tabitem>ul{
+    width: 60%;
+    height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.tab>.tabitem>ul>a>li{
+    width: 400px;
+    height: 100%;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 15px;
+   position: relative;
+}
+.tab>.tabitem>ul>a>li:hover::after{
+        content: "";
+        width: 60px;
+        border: 20px solid #386fe6;
+        border-width: 2px;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+}
+.hide{
+    clear:left;
+    display: none;
+    width: 100%;
+    height: 930px;
+}
+.show{
+    clear:left;
+    display: block;
+    width: 100%;
+    height: 930px;
+}
+section{
+    width: 100%;
+    height: 630px;
+}
+.ulitem{
+    width: 100%;
+    height: 530px;
+   margin-top: 50px;
+}
+.ulitem>a>li{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    border-bottom: silver 1px solid;
+}
+.ulitem>a>li>.blue{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: steelblue;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.ulitem>a>li>.blue>.bluetext{
+    font-size: 12px;
+}
+.ulitem>a>li>.litext{
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+}
+.ulitem>a>li>.litext>.text>.text1>a{
+    color: black;
+    font-size: 15px;
+   
+  
+}
+.ulitem>a>li>.litext>.text>.text2{
+    color: silver;    
+    font-size: 12px;
+}

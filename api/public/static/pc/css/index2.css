@@ -1,0 +1,214 @@
+.center{
+    width: 100%;
+}
+.content-item1{
+    width: 100%;
+    height: 580px;
+}
+.content-item1-div{
+    width: 1200px ;
+    height: 580px;
+    margin:0 auto 0;
+}
+.content-item1-title{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.content-item1-content{
+    width: 100%;
+    height: 380px;
+}
+.content-item1-content-ul{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+}
+.content-item1-content-ul-li{
+    width: 270px;
+    height: 100%;
+}
+.content-item1-content-ul-li-ul{
+    width: 100%;
+    height: 100%;
+}
+.content-item1-content-ul-li-ul-li{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;    
+}
+.content-item1-content-ul-li-ul-li1{
+    width: 100%;
+    height: 130px;
+    background-image: url(../imgs/index-item1-1.png);
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+
+.content-item1-content-ul-li-ul-li2{
+    width: 100%;
+    height: 130px;
+    background-image: url(../imgs/index-item1-2.jpg);
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.content-item1-content-ul-li-ul-li3{
+    width: 100%;
+    height: 130px;
+    background-image: url(../imgs/index-item1-3.jpg);
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.content-item1-content-ul-li-ul-li4{
+    width: 100%;
+    height: 130px;
+    background-image: url(../imgs/index-item1-4.jpg);
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.content-item1-content-ul-li-ul-li:nth-child(2){
+   font-size: 16px;
+}
+.content-item1-content-ul-li-ul-li:nth-child(3){
+    color:silver;
+}
+.content-item1-content-ul-li-ul-li:nth-child(4){
+    color:silver;
+}
+.content-item2{
+    background-image: url(../imgs/index-itembg.jpg);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.content-item2-span1{
+    width: 100%;
+    height: 200px;
+    color:#ffffff;
+    font-size: 22px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-item2-span2{
+    width: 100%;
+    height:130px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.content-item2>button{
+    width: 205px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    outline: none;
+    border-radius: 20px;
+    background-color: transparent;
+    margin:0 auto 0;
+}
+.content-item2>button:hover{
+    background-color:rgb(247,116,0);
+    border:none;
+}
+.content-item3{
+    width: 100%;
+    height: 1000px;
+}
+.content-item3-div{
+    height:800px;
+    width: 1200px;
+    margin:0 auto 0;
+}
+.content-item3-select{
+    height:800px;
+    width: 1200px;
+}
+.select{
+    height:800px;
+    width: 1200px;
+}
+.tab{
+    width: 100%;
+    height: 100px;
+}
+.tabitem{
+    width: 100%;
+    height: 100px;
+}
+.tabitem>ul{
+    margin:0 auto 0;
+    width: 750px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tabitem>ul>li{
+    width: 125px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.tabitem>ul>li:hover{
+    background-color:rgb(247,116,0);
+}
+.show{
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+.hide{
+    width: 100%;
+    height: 700px;
+    display: none;
+}
+.show>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.show>ul>li{
+    width: 290px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.show-img{
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.show-img img{
+    width: 90%;
+    height: 90%;
+}
+.show-img img:hover{
+    transition-duration:1.5s;
+    transform: translateY(-5%);
+}
+
+.show>ul>li:hover{
+    background-color: #C0C0C0;
+}
+
+.show>ul>li>span{
+    color:#484848;
+    font-size: 16px;
+}
+
+

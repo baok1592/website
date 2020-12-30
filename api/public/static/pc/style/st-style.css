@@ -1,0 +1,47 @@
+/* **************************通用css开始******************************** */
+
+/* 编码方式 */
+
+
+/* ------------------------------------全局定义---------------------------------------- */
+
+/* 将具有默认margin和padding的标记置零，所有标记的margin、padding都在使用时具体定义 */
+*{ margin:0;padding:0;}
+
+/* 修正IE5.x和IE6的斜体溢出bug */
+* html body{ overflow:visible;}
+* html iframe, * html frame{ overflow:auto;}
+* html frameset{ overflow:hidden;}
+
+/* 常用标签，基本标签默认样式取消，HTML标签，取消基本标签默认样式，防止不同浏览器显示效果不同，text-align:center; 解决不同浏览器居中问题 */
+body{ font:12px/26px Verdana,Arial,"Times New Roman",黑体; text-align:center; }
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
+/* 设置input的垂直对齐方式：将元素放在父元素的中部， */
+input,select{ font-size:12px; vertical-align:middle;}
+
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,input{ word-wrap:break-word; word-break:break-all; padding:0px;}
+
+/* 定义默认的链接样式，仅仅是作为默认样式提供，可以在各自的实例中覆盖掉 */
+a{
+	color:white;text-decoration:none;
+} 
+a:hover{   text-decoration:none;}
+
+
+/* 定义H系列标签，覆盖H系列标签默认属性 */ 
+h2{ font-size:16px;}
+h3{ font-size:14px;}
+h4{ font-size:16px;}
+h5{ font-size:14px;}
+h6{ font-size:12px;}
+/* 去除input选中时的边框 */ 
+input{outline:none;}
+
+/* 清除ul列表标记的样式，ul列表更多的用在不需要列表前置符号的样式里 */
+li{ list-style-type:none;}
+
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img{ border:0 none;}
+/* 字体颜色 */
+
