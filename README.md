@@ -14,16 +14,14 @@ PC端有2种实现方案：TP视图 ， vue + nuxt.js
 
 
 
-
 ##### 手册： https://www.yuque.com/u158056/cuwbcq
-##### 官网： http://qz.ruhuashop.com/ 
+##### 官网： https://qz.telidy.cn/ 
 ##### QQ群： 728615087
 ##### 下载【31MB】： https://github.com/baok1592/website
  
 
 #### 商业版后台演示
-http://qz_demo.ruhuashop.com    admin    123456
-
+https://qz1.telidy.cn/qzcms/#/login
 
 #### 开源版使用须知
 1.  允许用于个人学习、毕业设计、教学案例、公益事业
